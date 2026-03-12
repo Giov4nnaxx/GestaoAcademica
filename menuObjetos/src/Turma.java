@@ -1,4 +1,6 @@
-public class Turma {
+import java.io.Serializable;
+
+public class Turma implements Ativavel{
     private String curso;
     private String sigla;
     private Periodo periodo;
