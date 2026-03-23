@@ -1,61 +1,24 @@
-# 🎓 Gestão Acadêmica
+# 🎓 Sistema de Gestão Acadêmica
 
-Sistema de gerenciamento acadêmico desenvolvido em Java (console), com foco em controle de alunos e turmas, aplicando boas práticas de programação e organização de código.
+## 📌 Descrição
+Sistema desenvolvido para gerenciamento acadêmico, permitindo o cadastro, edição e consulta de informações.
 
----
+## 💻 Tecnologias utilizadas
+- Java / JavaScript (coloca o que você usou)
+- MySQL (se tiver)
+- HTML, CSS
 
-## 📌 Funcionalidades
+## 🚀 Funcionalidades
+- Cadastro de alunos
+- Listagem de dados
+- Edição de informações
+- Exclusão de registros
 
-### 👩‍🎓 Alunos
+## 🎯 Objetivo
+Projeto desenvolvido com foco em praticar lógica de programação, estrutura de dados e desenvolvimento de sistemas.
 
-* Cadastro de alunos
-* Listagem de alunos por turma
-* Edição de dados do aluno
-* Desativação de alunos
-* Validação de idade (mínimo 14 e máximo 130 anos)
-* Validação de data de nascimento
-
-### 🏫 Turmas
-
-* Cadastro de turmas
-* Listagem de turmas
-* Edição de turmas
-* Desativação de turmas
-* Regra de integridade:
-
-  * Não permite desativar turma com alunos ativos sem confirmação
-  * Opção de desativar todos os alunos da turma automaticamente
-
----
-
-## 🧠 Regras de Negócio
-
-* Apenas alunos **ativos** são considerados nas operações
-* Não é possível cadastrar aluno:
-
-  * Com idade menor que 14 anos
-  * Com idade maior que 130 anos
-* Não é permitido manter alunos ativos em turmas inativas
-* Exclusão lógica (soft delete) utilizando atributo `ativo`
-
----
-
-## 🛠️ Tecnologias Utilizadas
-
-* Java
-* Programação Orientada a Objetos (POO)
-* Java Time API (`LocalDate`, `Period`)
-* Estruturas de dados (`ArrayList`)
-* Stream API (filtros e validações)
-
----
-
-## 🧱 Estrutura do Projeto
-
-```
-📁 src
- ┣ 📄 Main.java            → Controle do menu e fluxo do sistema
- ┣ 📄 Aluno.java           → Entidade Aluno
+## ▶️ Como executar
+(Se quiser, coloca como roda) ┣ 📄 Aluno.java           → Entidade Aluno
  ┣ 📄 Turma.java           → Entidade Turma
  ┣ 📄 AlunoService.java    → Regras e operações de alunos
  ┣ 📄 TurmaService.java    → Regras e operações de turmas
